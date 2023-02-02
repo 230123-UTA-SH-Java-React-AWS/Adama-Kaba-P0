@@ -1,0 +1,9 @@
+{
+  "pokeId": 1,
+  "name": "Pikachu",
+  "level": 10,
+  "health": 100,
+  "damage": 120,
+  "speed": 1,
+  "abilities": []
+}
