@@ -1,6 +1,5 @@
 package com.revature;
 
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,8 +16,3 @@ class AppTest {
         assertEquals(1, 1);
     }
 }
-//public class AppTest {
-//    public static void main(String[] args) {
-//
-//    }
-//}
