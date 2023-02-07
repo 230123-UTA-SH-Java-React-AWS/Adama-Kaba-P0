@@ -109,8 +109,3 @@ public class PokemonRepository {
     }
 
 }
-//public class PokemonRepository {
-//    public static void main(String[] args) {
-//
-//    }
-//}
