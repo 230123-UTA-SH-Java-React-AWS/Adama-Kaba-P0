@@ -8,11 +8,11 @@ import java.sql.SQLException;
 public class ConnectionUtil {
 
     //We want only one connection to the database the entire time
-    private static Connection con;
+    private static Connection conn;
 
     //Private constructor to prevent anyone from many an object
     private ConnectionUtil() {
-        con = null;
+        conn = null;
     }
 
     //Method that will give us a connection to the DB
@@ -21,8 +21,8 @@ public class ConnectionUtil {
         //Determine if we already connection and if so give the current connection
         try {
 
-            if (con != null && !con.isClosed()) {
-                return con;
+            if (conn != null && !conn.isClosed()) {
+                return conn;
             }
 
         } catch (SQLException e) {
@@ -46,13 +46,13 @@ public class ConnectionUtil {
 
 
         try {
-            con = DriverManager.getConnection(url, user, pass);
+            conn = DriverManager.getConnection(url, user, pass);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
             System.out.println("YOU PROBABLY GAVE THE WRONG PASSWORD OR URL");
         }
 
-        return con;
+        return conn;
     }
 }
